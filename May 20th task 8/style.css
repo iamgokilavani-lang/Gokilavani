@@ -1,0 +1,99 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+#loading,
+#error {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px;
+}
+
+#error {
+  color: red;
+  display: none;
+}
+
+/* Search & Filter Bar */
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input,
+button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+  background: white;
+}
+
+button.active {
+  background: #333;
+  color: white;
+}
+
+/* Product Grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Card with Hover Effect */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.card h4 {
+  font-size: 14px;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  color: green;
+  font-weight: bold;
+}
+
+/* Cart Bar */
+.cart-bar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #333;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+/* Cart Items List */
+.cart-item {
+  background: white;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
